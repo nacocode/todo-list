@@ -1,9 +1,9 @@
 <h1>Add New ToDo List</h1>
-
+<br>
 <%= render "form", todo_list: @todo_list %>
 
 <br>
-
 <div>
-  <%= link_to "Back to todo lists", todo_lists_path %>
+  <%= link_to "Back", todo_lists_path,
+  class:"btn btn-dark" %>
 </div>
