@@ -17,6 +17,7 @@ class TodoListsController < ApplicationController
 
   # GET /todo_lists/1/edit
   def edit
+    @todo_list = TodoList.find(params[:id])
   end
 
   # POST /todo_lists or /todo_lists.json
